@@ -7,7 +7,7 @@ import ast
 import signal
 from datetime import datetime
 from pytz import timezone
-from WqbDev.auth import global_sign_in, setup_logging
+from auth import global_sign_in, setup_logging
 
 
 class AlphaSimulator:
@@ -182,6 +182,6 @@ if __name__ == "__main__":
         f"Current time in Eastern: {datetime.now(timezone('US/Eastern')).strftime('%Y-%m-%d %H:%M:%S')}"
     )
     simulator = AlphaSimulator(
-        max_concurrent=10, alpha_list_file="alphas_pending_simulated.csv"
+        max_concurrent=10, alpha_list_file="pending_simulated_list.csv"
     )
     simulator.manage_simulations()

@@ -40,10 +40,10 @@ This component generates alpha expressions based on fundamental data.
 
 **Usage:**
 ```bash
-python alpha_creator.py
+python creator.py
 ```
 
-**Output:** `alphas_pending_simulated.csv`
+**Output:** `pending_simulated.csv`
 
 ### 2. Alpha Simulator
 
